@@ -36,4 +36,8 @@
 
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">26px</dimen>
+    
+    <!-- UDFPS dialog extra padding to align with sensor -->
+    <dimen name="config_udfpsDialogExtraPadding">48px</dimen>
+    <dimen name="config_udfpsDialogExtraPaddingLandscape">38px</dimen>
 </resources>
