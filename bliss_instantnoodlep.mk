@@ -23,10 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
 # Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Xtras
-DERP_BUILDTYPE := Official
+BLISS_BUILD_VARIANT := gapps
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1440
@@ -34,7 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 1440
 # Blur
 TARGET_USES_BLUR := true
 
-PRODUCT_NAME := derp_instantnoodlep
+PRODUCT_NAME := bliss_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
