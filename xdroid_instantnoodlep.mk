@@ -1,6 +1,5 @@
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2020-2022 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,29 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from instantnoodlep device
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-
-# Xtras
-DERP_BUILDTYPE := Official
-EXTRA_UDFPS_ANIMATIONS := true
+# Inherit some common xdroidsp stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
+XDROID_BOOT := 1440
+XDROID_MAINTAINER := Saurabh Parab
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1440
 
-# Blur
-TARGET_USES_BLUR := true
-
-PRODUCT_NAME := derp_instantnoodlep
+PRODUCT_NAME := xdroid_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := IN2023
 
-PRODUCT_SYSTEM_NAME := OnePlus8Pro_EEA
-PRODUCT_SYSTEM_DEVICE := OnePlus8Pro
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=OnePlus8Pro \
-    TARGET_PRODUCT=OnePlus8Pro_EEA
+    PRODUCT_DEVICE=OnePlus8Pro
