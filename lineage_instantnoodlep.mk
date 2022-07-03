@@ -31,7 +31,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Blur
-TARGET_USES_BLUR := true
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_NAME := lineage_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
