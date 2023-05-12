@@ -1,14 +1,14 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
-#               2022 The lineage X Project
+# Copyright (C) 2018-2019 The coltOS Project
+#               2022 The colt X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_instantnoodlep.mk
+    $(LOCAL_DIR)/colt_instantnoodlep.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_instantnoodlep-user \
-    lineage_instantnoodlep-userdebug \
-    lineage_instantnoodlep-eng
+    colt_instantnoodlep-user \
+    colt_instantnoodlep-userdebug \
+    colt_instantnoodlep-eng
