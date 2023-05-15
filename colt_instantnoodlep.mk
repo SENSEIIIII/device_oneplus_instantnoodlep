@@ -26,6 +26,8 @@ TARGET_USES_BLUR := true
 # Gapps
 WITH_GAPPS := true
 
+# Official
+COLT_BUILD_TYPE := Official
 COLT_BUILD_MAINTAINER := Saurabh Parab
 
 PRODUCT_NAME := colt_instantnoodlep
