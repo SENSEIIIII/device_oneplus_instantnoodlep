@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_instantnoodlep.mk
+    $(LOCAL_DIR)/lineage_instantnoodlep.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_instantnoodlep-user \
-    derp_instantnoodlep-userdebug \
-    derp_instantnoodlep-eng
+    lineage_instantnoodlep-user \
+    lineage_instantnoodlep-userdebug \
+    lineage_instantnoodlep-eng
