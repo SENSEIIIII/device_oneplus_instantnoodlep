@@ -12,6 +12,9 @@ DEVICE_PATH := device/oneplus/instantnoodlep
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+# Disable sparse on all filesystem images
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
