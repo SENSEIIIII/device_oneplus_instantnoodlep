@@ -15,6 +15,9 @@ $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
+# Official
+DERP_BUILDTYPE := Official
+
 # Extras
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_USES_BLUR := true
